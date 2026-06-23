@@ -25,12 +25,12 @@ export default function Catalogo({ data, setCart }) {
 		})
 	}
 
-	if (!data) return <p>Carregando itens do inventário...</p>
+	if (!data || data.length === 0) return <p>Carregando itens do inventário...</p>
 
 	return (
 		<div>
 			<div className='grid-cards'>
-				{data.produtos.map((prod) => (
+				{data.map((prod) => (
 					<ProductItem
 						key={prod.id}
 						produto={prod}

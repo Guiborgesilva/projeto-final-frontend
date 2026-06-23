@@ -288,11 +288,12 @@ button:active {
 	border-color: #01be6e;
 }
 .coupon-input-group button {
-	background-color: #333;
+	background-color: #01be6e;
 	color: #fff;
+	transition: background-color 0.3s;
 }
 .coupon-input-group button:hover {
-	background-color: #111;
+	background-color: #00a05d;
 }
 
 .msg-erro {
@@ -324,6 +325,11 @@ button:active {
 	color: #fff;
 	padding: 14px;
 	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+.btn-pix:hover {
+	background-color: #00a05d;
 }
 .btn-credito {
 	background-color: #333;
@@ -331,11 +337,22 @@ button:active {
 	padding: 14px;
 	font-size: 1rem;
 }
+
+.btn-credito:hover {
+	background-color: #222222;
+}
+
 .btn-voltar {
 	background-color: transparent;
 	color: #666;
 	border: 1px solid #ccc;
 	margin-top: 10px;
+	transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+	background-color: #d32f2f;
+	color: #fff;
 }
 
 /* Botão desativado quando não tem itens */

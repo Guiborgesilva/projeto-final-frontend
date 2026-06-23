@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useFetch } from '../hooks/useFetch'
 import CartSummary from '../components/CartSummary'
 import CouponInput from '../components/CouponInput'
 
 export default function Checkout({ data, cart, setCart }) {
 	const navigate = useNavigate()
 	const [cupomInfo, setCupomInfo] = useState({ valido: false, cupom: null })
+
+	const { data: cuponsData } = useFetch('http://localhost:3001/cupons')
 
 	const alterarQtd = (id, acao) => {
 		setCart((prev) => {
@@ -24,7 +27,6 @@ export default function Checkout({ data, cart, setCart }) {
 		desconto = subtotalCategoria * (cupomInfo.cupom.desconto_porcentagem / 100)
 	}
 
-	// TELA VAZIA CASO ELE REMOVA TUDO
 	if (cart.length === 0) {
 		return (
 			<div style={{ textAlign: 'center', marginTop: '60px' }}>
@@ -75,9 +77,9 @@ export default function Checkout({ data, cart, setCart }) {
 					desconto={desconto}
 				/>
 
-				{data.cupons && (
+				{cuponsData && (
 					<CouponInput
-						cupons={data.cupons}
+						cupons={cuponsData}
 						produtosNoCarrinho={cart}
 						onAplicarCupom={setCupomInfo}
 					/>

@@ -18,8 +18,11 @@ export function useFetch(url) {
 				}
 
 				const json = await response.json()
-				setData({ produtos: json }) // O json-server retorna direto o array de produtos, então colocamos dentro de um objeto pra manter o seu código funcionando sem mudar nada mais
-				setError(null)
+				if (json.data) {
+					setData(json.data)
+				} else {
+					setData(json)
+				}
 			} catch (err) {
 				if (err.name !== 'AbortError') {
 					setError(err.message)
@@ -31,7 +34,6 @@ export function useFetch(url) {
 
 		fetchData()
 
-		// Limpa a requisição se o componente desmontar
 		return () => controller.abort()
 	}, [url])
 
