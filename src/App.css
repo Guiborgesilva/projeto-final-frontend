@@ -118,7 +118,43 @@ body::before {
 	border-radius: 8px;
 	border: 1px solid #e0e0e0;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
+
+.card-img-container {
+	width: 100%;
+	padding-top: 56.25%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.card-content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.card h3 {
+	margin: 0 0 10px 0;
+	font-size: 1.1rem;
+}
+.descricao {
+	font-size: 0.85rem;
+	color: #666;
+	margin-bottom: 15px;
+	flex: 1;
+} /* O flex: 1 empurra o botão pra baixo */
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .card h3 {
 	margin: 0 0 10px 0;
 	font-size: 1.1rem;

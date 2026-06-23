@@ -8,7 +8,8 @@
 			"categoria": "perifericos",
 			"estoque": 5,
 			"promocao": true,
-			"nota": 4.5
+			"nota": 4.5,
+			"imagem": "/teclado.png"
 		},
 		{
 			"id": "2",
@@ -18,7 +19,8 @@
 			"categoria": "perifericos",
 			"estoque": 12,
 			"promocao": false,
-			"nota": 4.8
+			"nota": 4.8,
+			"imagem": "/mouse.png"
 		},
 		{
 			"id": "3",
@@ -28,7 +30,8 @@
 			"categoria": "monitores",
 			"estoque": 1,
 			"promocao": false,
-			"nota": 4.2
+			"nota": 4.2,
+			"imagem": "/monitor.png"
 		},
 		{
 			"id": "4",
@@ -38,7 +41,8 @@
 			"categoria": "geek",
 			"estoque": 25,
 			"promocao": true,
-			"nota": 4.0
+			"nota": 4.0,
+			"imagem": "/caneca.png"
 		},
 		{
 			"id": "5",
@@ -48,7 +52,8 @@
 			"categoria": "livros",
 			"estoque": 0,
 			"promocao": false,
-			"nota": 4.9
+			"nota": 4.9,
+			"imagem": "/livro.png"
 		},
 		{
 			"id": "6",
@@ -58,7 +63,8 @@
 			"categoria": "geek",
 			"estoque": 4,
 			"promocao": false,
-			"nota": 4.6
+			"nota": 4.6,
+			"imagem": "/batman.png"
 		},
 		{
 			"id": "7",
@@ -68,7 +74,8 @@
 			"categoria": "perifericos",
 			"estoque": 8,
 			"promocao": true,
-			"nota": 3.9
+			"nota": 3.9,
+			"imagem": "/headset.png"
 		},
 		{
 			"id": "8",
@@ -78,7 +85,8 @@
 			"categoria": "livros",
 			"estoque": 15,
 			"promocao": false,
-			"nota": 5.0
+			"nota": 5.0,
+			"imagem": "/comicbook.png"
 		}
 	],
 	"usuarios": [

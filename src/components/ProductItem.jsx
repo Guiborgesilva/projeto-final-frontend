@@ -1,6 +1,12 @@
 export default function ProductItem({ produto, onAdd, btnRef }) {
 	return (
 		<div className='card'>
+			<div
+				className='card-img-container'
+				style={{
+					backgroundImage: `url(${produto.imagem})`
+				}}
+			></div>
 			<h3>{produto.nome}</h3>
 			<p className='descricao'>{produto.descricao}</p>
 			<div className='card-footer'>
